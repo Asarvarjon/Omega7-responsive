@@ -32,7 +32,10 @@ nav {
     display: flex;
     align-items: center;
 }
-
+.bar-image {
+    width: 25px;
+    display: none;
+}
 .nav-list {
     display: flex;
     margin-left: 300px;
@@ -94,8 +97,8 @@ nav {
 
 .header-info-box {
     display: flex;
-    padding: 80px;
-    padding-bottom: 40px;
+    padding: 80px 0px 60px 50px;
+    
 
 
 }
@@ -146,13 +149,19 @@ nav {
 label {
     display: flex;
     align-items: center;
-    padding: 15px;
+    
 }
 
 .email {
     margin-right: 20px;
 }
 
+.input-email {
+    width: 50%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
 .email-text {
     font-size: 18px;
     line-height: 21px;
@@ -163,7 +172,8 @@ label {
 
 
 .header-btn {
-    margin-left: 90px;
+    margin-left: auto;
+    margin-right: 10px;
     padding: 15px 40px;
     background: #F04037;
     border: 1px solid #C31A12;
@@ -213,13 +223,17 @@ label {
 main .container {
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 100px 100px;
+    
 
 }
 
 .travel-box {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -318,27 +332,35 @@ main .container {
 
 
 .first-image {
+    border-radius: 5px;
     margin: 5px;
     width: 200px;
     height: 280px;
+    object-fit: cover;
 }
 
 .second-image {
+    border-radius: 5px;
     margin: 5px;
     width: 200px;
     height: 160px;
+    object-fit: cover;
 }
 
 .third-image {
+    border-radius: 5px;
     margin: 5px;
     width: 200px;
     height: 160px;
+    object-fit: cover;
 }
 
 .forth-image {
+    border-radius: 5px;
     margin: 5px;
     width: 200px;
     height: 280px;
+    object-fit: cover;
 }
 
 .world-box-title {
@@ -401,18 +423,24 @@ main .container {
     text-decoration: underline;
 }
 
-.video-box {
+.video-section {
     position: relative;
-    padding: 60px 0px;
-    padding-bottom: 0px;
-
+    height: 700px;
+    background-image: url(./img/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+    background-position-x: center;
 }
 
+
+
+
 .play {
-    width: 70px;
+    width: 100px;
     position: absolute;
-    bottom: 43%;
-    right: 50%;
+    bottom: 50%;
+    right: 49%;
     transform: translate(50%, 50%);
 
 }
@@ -492,4 +520,355 @@ main .container {
     text-align: right;
     letter-spacing: -0.500211px;
     color: #19191B;
+}
+
+
+@media (max-width:1160px) {
+    .container {
+        width: 1000px;
+
+    }
+
+    .header-info-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-img {
+        width: 45%;
+        margin: 0px;
+    }
+
+    .header-info {
+        width: 50%;
+        margin: 0px;
+    }
+
+    .travel-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .travel-infos {
+        width: 55%;
+    }
+
+    .travel-box-photo {
+        width: 40%;
+    }
+
+    .header-info-title, .travel-box-title, .experince-title, .footer-first-name, .world-box-title {
+        font-size: 46px;
+    }
+
+    .header-info-text, .travel-box-text, .world-box-text, .experience-text, .footer-info {
+        font-size: 19px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-images {
+        margin-left: 0px;
+    }
+
+
+    .video-section {
+        background-position-x: center;
+    }
+}
+
+
+@media (max-width:1020px) {
+    .container {
+        width: 900px;
+
+    }
+
+}
+
+
+@media (max-width:920px) {
+    .container {
+        width: 800px;
+
+    }
+
+    main .container {
+        padding: 100px 0px;
+    }
+
+
+    .travel-infos {
+        width: 45%;
+    }
+
+    .travel-box-photo {
+        width: 45%;
+    }
+
+    .travel-img {
+        margin-left: 0px;
+    }
+
+    .review-section .container {
+        padding: 100px 0px  ;
+    }
+
+    .header-info-box {
+        padding-left: 10px;
+    }
+
+    .header-img {
+        width: 35%;
+    }
+
+    .header-info {
+        width: 55%;
+    }
+
+    .world-box {
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width:820px) {
+    .container {
+        width: 700px;
+
+    }
+
+    .nav-list {
+        margin-left: auto;
+    }
+
+    .header-info-title, .travel-box-title, .experince-title, .footer-first-name, .world-box-title {
+        font-size: 38px;
+        line-height: normal;
+    }
+
+    .header-info-text, .travel-box-text, .world-box-text, .experience-text, .footer-info {
+        font-size: 18px;
+    }
+
+    .header-btn {
+        margin-left: auto;
+        padding: 10px 20px;
+    }
+
+    .footer-text {
+        margin-left: 20px;
+    }
+
+}
+
+
+@media (max-width:720px) {
+    .container {
+        width: 600px;
+
+    }
+
+    .header-info-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-info {
+        width: 90%;
+        text-align: center;
+    }
+
+    .header-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-btn {
+        margin-left: 0px;
+    }
+
+    .review-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review1 {
+        width: 80%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .travel-box {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .travel-box-photo {
+        display: none;
+    }
+
+    .travel-infos {
+        width: 90%;
+        text-align: center;
+    }
+
+    .travel-plans-item {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .world-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .world-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        text-align: center;
+        margin-right: 170px;
+    }
+
+    .world-info {
+        width: 80%;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .travel-experience {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .experience-img {
+        width: 50%;
+        
+    }
+
+    .experience-info {
+        width: 80%;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-text {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:620px) {
+    .container {
+        width: 500px;
+
+    }
+
+}
+
+@media (max-width:520px) {
+    .container {
+        width: 90%;
+
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-get-link {
+        display: none;
+    }
+
+    .bar-image {
+        display: block;
+        margin-left: auto;
+    }
+
+    .header-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-btn {
+        width: 60%;
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .label {
+        width: 40%;
+ 
+    }
+
+    .travel-plan-text {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .footer-images {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email {
+        margin-right: 5px;
+    }
+
+    .input-email {
+        width: 50%;
+    }
+
+    .footer-list {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
 }

@@ -236,6 +236,10 @@ main .container {
     justify-content: center;
 }
 
+.travel-infos {
+    width: 55%;
+}
+
 
 .travel-img {
     margin-left: 80px;
@@ -445,6 +449,17 @@ main .container {
 
 }
 
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-first-info {
+    width: 35%;
+}
+
 .footer-first-name {
     font-size: 54px;
     line-height: 70px;
@@ -463,9 +478,6 @@ main .container {
     color: #696871;
 }
 
-.footer-images {
-   margin-left: 400px;
-}
 
 .app {
     margin-right: 10px;
@@ -669,6 +681,9 @@ main .container {
         margin-left: 20px;
     }
 
+    .review1 {
+        margin-left: 0px;
+    }
 }
 
 
@@ -715,6 +730,11 @@ main .container {
         margin-top: 20px;
     }
 
+    main .container {
+        align-items: center;
+        justify-content: center;
+    }
+
     .travel-box {
         width: 90%;
         display: flex;
@@ -723,6 +743,11 @@ main .container {
         justify-content: center;
     }
 
+    .travel-plan-text {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
     .travel-box-photo {
         display: none;
     }
@@ -786,6 +811,10 @@ main .container {
         margin-right: 0px;
     }
 
+    .footer-first-info {
+        width: 80%;
+    }
+
     .footer-bottom {
         display: flex;
         flex-direction: column;
@@ -804,6 +833,12 @@ main .container {
 
     }
 
+
+    .travel-plan-text {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
 }
 
 @media (max-width:520px) {
@@ -816,6 +851,10 @@ main .container {
         display: none;
     }
 
+    .app {
+        margin-right: 0px;
+    }
+
     .nav-get-link {
         display: none;
     }
@@ -826,6 +865,7 @@ main .container {
     }
 
     .header-form {
+    
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -837,9 +877,11 @@ main .container {
         margin-top: 10px;
     }
 
-    .label {
-        width: 40%;
- 
+    label {
+       width: 200px;
+       margin-left: 50px;
+       font-size: 14px;
+       
     }
 
     .travel-plan-text {
